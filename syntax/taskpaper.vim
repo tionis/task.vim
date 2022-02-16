@@ -25,7 +25,7 @@ syn case ignore
 
 syn match taskpaperComment   /^.*$/ contains=taskpaperContext
 syn match taskpaperProject   /^.\+:\(\s\+@[^ \t(]\+\(([^)]*)\)\?\)*$/ contains=taskpaperContext
-syn match taskpaperListItem  /^  *-\s\+/
+syn match taskpaperListItem  /^\t*-\s\+/
 syn match taskpaperContext   /\s\zs@[^ \t(]\+\(([^)]*)\)\?/
 syn match taskpaperToday     /@today/
 syn match taskpaperUrgent    /@urgent/
